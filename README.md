@@ -45,7 +45,7 @@ Ti NH₃ C₂H₆O KCl Ba Th Cr CO₂ Ne CH₄ H₂SO₄ CaCO₃ Au NaCl Si S
 1. Open Foundry VTT v13 and navigate to **Game Systems > Install System**.
 2. Enter *Shut Up, It's Quantum!* in the search field or paste the following URL into the installation field:
    ```text
-   [Temporary development URL]
+   https://github.com/YanKlInnomme/FoundryVTT-shut-up-its-quantum/releases/latest/download/system.json
    ```
 3. Then click the Install button.
 4. In the **Game Worlds** tab, click **Create World** and select *Shut Up, It's Quantum!* as the game system.
@@ -106,7 +106,7 @@ C₂H₂ NH₃ Br C₂H₆O Ba H₂ Sn Fe₂O₃ Ba CH₄ KCl CO₂ Ne Cl₂ Co 
 1. Ouvrez Foundry VTT v13 et allez dans le menu **Game Systems > Install System**.
 2. Saisissez *Shut Up, It's Quantum!* dans le champ de recherche ou collez l'URL suivante dans le champ d'installation :
    ```text
-   [URL temporaire de développement]
+   https://github.com/YanKlInnomme/FoundryVTT-shut-up-its-quantum/releases/latest/download/system.json
    ```
 3. Puis cliquez sur le bouton **Install**.
 4. Dans l'onglet **Game Worlds**, cliquez sur **Create World** et sélectionnez pour système de jeu *Shut Up, It's Quantum!*
