@@ -1,0 +1,106 @@
+{
+  "TYPES": {
+    "Actor": {
+      "character": "Personnage transitoire",
+      "inference": "Inférence quantique"
+    },
+    "Item": {
+      "artifact": "Artefact substanciel"
+    }
+  },
+  "SUIQ": {
+    "Links": {
+      "SiteTitle": "YanKlInnomme",
+      "SiteURL": "https://yanklinnomme.fr/",
+      "GitTitle": "Dépôt du système",
+      "GitURL": "https://github.com/YanKlInnomme/FoundryVTT-shut-up-its-quantum",
+      "DonationTitle": "Offre-moi un Café",
+      "DonationURL": "https://www.buymeacoffee.com/yank"
+    },
+    "Sheets" : {
+      "Character": {
+        "NamePlaceholder": "Ex : Max Collapse, Luna Quark...",
+        "IdentityLabel": "Identité",
+        "IdentityHint": "Donnez à ce personnage, un visage que tous peuvent observer.",
+        "OccupationLabel": "Occupations en superposition",
+        "OccupationHint": "Choisissez deux professions totalement différentes.",
+        "OccupationAPlaceholder": "Ex : Guerrière, Magicien, Voleur...",
+        "OccupationBPlaceholder": "Ex : Scientifique, Artiste, Politicienne...",
+        "OccupationStateLabel": "Occupation observée (réservé au MJ)",
+        "OccupationStateHint": "Quelle profession est active en ce moment ?",
+        "OccupationStateSuperposed": "En superposition",
+        "TraitLabel": "Trait unique",
+        "TraitHint": "Choisissez un pouvoir ou une bizarrerie totalement absurde.",
+        "NotesLabel": "Notes",
+        "NotesHint": "Zone libre de tout usage quantique."
+      },
+      "Inference": {
+        "NamePlaceholder": "Ex : Cortex l’Impensant, L’Onde-Mère...",
+        "ObjectiveLabel": "Objectif de l’inférence",
+        "ObjectiveHint": "Que veut cette force et qu’est-ce qui l'oppose aux PJs ?",
+        "ObjectivePlaceholder": "Ex : Voler, Détruire, Sauver, Trouver...",
+        "DescriptionLabel": "Description",
+        "DescriptionHint": "Décrivez cette inférence quantique en détail.",
+        "EffectLabel": "Effet",
+        "EffectHint": "Quel est l’effet de cette inférence sur la réalité ?"
+      },
+      "Artifact": {
+        "NamePlaceholder": "Ex : Fragment de Décorrélation, Cube d’Empathie Nulle...",
+        "DescriptionLabel": "Description",
+        "DescriptionHint": "Décrivez l’apparence, l’origine ou la fonction apparente de l’artefact.",
+        "EffectLabel": "Effets",
+        "EffectHint": "Expliquez comment cet artefact modifie la réalité ou influence ceux qui l’utilisent.",
+        "DropTableLabel": "Table aléatoire",
+        "DropTableHint": "Glissez-déposez une table aléatoire ici pour la lier à cet artefact.",
+        "DropHere": "Déposez une table aléatoire ici",
+        "LinkedTable": "Table aléatoire liée",
+        "LinkedTableHint": "Vous pouvez glisser-déposer une autre table pour la remplacer. Cliquez sur le bouton en dessous du nom pour lancer un jet.",
+        "TableNotFound": "Table liée introuvable.",
+        "NoLinkedTable": "Aucune table liée."
+      }
+    },
+    "Roll": {
+      "TwoD8Label": "Lancer 2d8",
+      "TwoD8Tooltip": "Lancez 2d8 pour déterminer l’issue quantique de votre action.",
+      "Result": {
+        "Catastrophe": "Catastrophe quantique",
+        "Erasure": "Effacement quantique",
+        "StrangeSuccess": "Succès étrange",
+        "ImprobableSuccess": "Succès improbable",
+        "DoubleInfinity": "Double Infini"
+      },
+      "Desc": {
+        "Catastrophe": "L’action échoue de façon spectaculaire, et le résultat est l’inverse total de ce que le joueur souhaitait. Exemple: Vouloir allumer une bougie provoque une tempête de neige dans la pièce. La MJ décrit la catastrophe à venir.",
+        "Erasure": "Rien ne se passe, strictement rien, comme si l'action n'avait jamais eu lieu. La MJ décrit la scène sans tenir compte de ce que le joueur vient de faire, en le traitant comme s'il n'avait même pas tenté d'agir. Les autres personnages peuvent même ne pas se souvenir que l'action a été tentée, sauf si le joueur insiste… mais l’univers lui-même ne « comprend» pas cette insistance.",
+        "StrangeSuccess": "L’action réussit partiellement, mais avec un résultat inattendu et souvent contre-intuitif. Par exemple, un sort de feu fait apparaître une vague d’eau glacée, ou convaincre quelqu’un lui donne soudain envie de danser.",
+        "ImprobableSuccess": "L’action réussit complètement, mais elle a (ou pas) une conséquence absurde. Par exemple, en trouvant la sortie d’un labyrinthe, le personnage se retrouve inexplicablement avec une salade dans les mains, ou un nuage de confettis les suit désormais partout.",
+        "DoubleInfinity": "Le joueur touche aux limites de la réalité avec un double 8, un « 88 » représentant l'infini de l'infini. Il est alors projeté dans un état quantique où il doit «renormaliser » la situation en lançant un 1d8 pour gérer l’énergie cosmique débordante (Voir la Table de Renormalisation Quantique)."
+      },
+      "FromTable": "Lancer "
+    },
+    "UI": {
+      "Unlock": {
+        "Suspension": "Déverrouillage interrompu : l'instabilité latente ne permet pas un ciblage suffisant."
+      },
+      "Import": {
+        "AccessDenied": "Observation impossible : probabilité d’interférence avec un autre observateur détectée",
+        "Success": "Réapparition quantique effective",
+        "Suspension": "Importation suspendue : la matrice quantique semble refuser toute tentative d’observation massive."
+      }      
+    },
+    "Settings": {
+      "SquareA": {
+        "Name": "Processus de restructuration quantique",
+        "Hint": "Veuillez n'utiliser cette option qu'en cas d'instabilité du système."
+      },
+      "SquareB": {
+        "Name": "Recalibrage quadratique de probabilité fine",
+        "Hint": "Bon, si cette option s'affiche, c'est qu'il demeure une fraction quantique d'instabilité. Veuillez n'utiliser cette option que si cette fraction devient hors de contrôle."
+      },
+      "SquareC": {
+        "Name": "Isolation subquantique ultradimensionnelle",
+        "Hint": "Là, je vais devoir redynamiser les matrices et replier les multivers. On bascule dans le calibrage nanomoléculaire, à la frontière même de la création de la matière. Veuillez n'utiliser cette option qu'en cas d'ultime recours."
+      }
+    }
+  }
+}

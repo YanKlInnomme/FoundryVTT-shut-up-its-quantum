@@ -1,0 +1,655 @@
+@layer reset {
+  body {
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@layer system {
+  @font-face {
+    font-family: 'Blanka';
+    src: url('../fonts/Blanka-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Orbitron';
+    src: url('../fonts/Orbitron-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  :root {
+    --suiq-color-zero-point-dawn:  rgba(255, 255, 220, 0.25);
+    --suiq-color-virtual-photon:  rgba(255, 253, 125, 0.2);
+    --suiq-color-decoherence-mist: rgba(200, 200, 150, 0.3);
+    --suiq-color-solar-superposition:  rgba(247, 235, 69, 0.3);
+    --suiq-color-uncertainty-flare:  rgba(255, 242, 60, 0.4);
+    --suiq-color-quantum-aureole:  rgba(255, 253, 125, 0.4);
+    --suiq-color-casimir-bloom: rgba(228, 239, 192, 0.5);
+    --suiq-color-probability-surge:  rgba(255, 255, 109, 0.45);
+    --suiq-color-collapse-glow: rgba(228, 239, 192, 0.75);
+
+    --suiq-color-quantum-hinterlight: rgba(40, 20, 80, 0.25);
+    --suiq-color-gravity-ink: rgba(27, 16, 63, 0.5);
+    --suiq-color-singularity-veil: rgba(27, 16, 63, 0.75);
+    --suiq-color-boson-glimmer: rgba(140, 90, 255, 0.25);
+    --suiq-color-excited-state-soft: rgba(150, 120, 255, 0.25);
+    --suiq-color-excited-state: rgba(160, 120, 255, 0.3);
+    --suiq-color-wavefunction-crest: rgba(180, 130, 255, 0.35);
+    --suiq-color-quantum-corona: rgba(180, 120, 255, 0.5);
+
+    --suiq-color-black: rgb(6, 6, 5);
+    --suiq-color-white: rgb(247, 243, 232);
+    --suiq-color-light-gray: rgb(200, 200, 200);
+    --suiq-color-gray: rgb(100, 100, 100);
+    --suiq-color-dark-gray: rgb(50, 50, 50);
+
+    --suiq-font-primary: 'Rubik', sans-serif;
+
+    --suiq-font-Blanka: 'Blanka', sans-serif;
+    --suiq-font-Orbitron: 'Orbitron', sans-serif;
+
+    --suiq-default-bg: url("../assets/background-sheet.webp");
+  }
+
+  * {
+    --color-text-hyperlink: var(--suiq-color-virtual-photon);
+    --color-shadow-primary: var(--suiq-color-black);
+    --color-shadow-highlight: var(--suiq-color-virtual-photon);
+    --color-border-highlight: var(--suiq-color-virtual-photon);
+    --color-border-highlight-alt: var(--suiq-color-black);
+    --color-scrollbar: var(--suiq-color-white);
+  }
+
+  #pause {
+    background: var(--suiq-default-bg) center / cover no-repeat;
+    gap: 0.5rem;
+    opacity: 0.85;
+  }
+  #pause img {
+    height: 150px;
+    width: 150px;
+    content: url("../assets/pause.svg");
+  }
+  #pause figcaption {
+    font-size: var(--font-size-28);
+    font-family: var(--suiq-font-Blanka);
+    color: var(--suiq-color-white);
+  }
+
+    /* ----------------------------------------- */
+    /*  Interface Customization                  */
+    /* ----------------------------------------- */
+
+    /* Light Theme Button Styles */
+    .application.theme-light a.button,
+    .themed.theme-light a.button,
+    .application.theme-light button,
+    .themed.theme-light button,
+    .application.theme-light kbd,
+    .themed.theme-light kbd {
+        --button-border-color: var(--color-dark-5);
+        --button-text-color: var(--color-dark-1);
+        --button-focus-outline-color: var(--suiq-color-black);
+        --button-hover-background-color: var(--suiq-color-solar-superposition);
+        --button-hover-border-color: var(--suiq-color-uncertainty-flare);
+        --button-hover-text-color: var(--suiq-color-gray);
+    }
+    /* Dark Theme Button Styles */
+    .application.theme-dark a.button,
+    .themed.theme-dark a.button,
+    .application.theme-dark button,
+    .themed.theme-dark button,
+    .application.theme-dark kbd,
+    .themed.theme-dark kbd {
+        --button-border-color: var(--color-light-5);
+        --button-text-color: var(--color-light-1);
+        --button-focus-outline-color: var(--suiq-color-white);
+        --button-hover-background-color: var(--suiq-color-boson-glimmer);
+        --button-hover-border-color: var(--suiq-color-quantum-corona);
+        --button-hover-text-color: var(--button-text-color);
+    }
+    /* Divider Styles */
+    .application.theme-light,
+    .themed.theme-light {
+        --divider-line-color: var(--suiq-color-light-gray);
+        --divider-text-color: var(--suiq-color-black);
+    }
+    .application.theme-dark,
+    .themed.theme-dark {
+        --divider-line-color: var(--suiq-color-quantum-corona);
+        --divider-text-color: var(--suiq-color-white);
+    }
+    /* General Button Styles */
+    a.button,
+    button,
+    kbd {
+        --button-focus-outline-color: var(--suiq-color-white);
+        --button-hover-background-color: var(--suiq-color-white);
+        --button-hover-border-color: var(--suiq-color-light-gray);
+        --button-hover-text-color: var(--suiq-color-black);
+    }
+    /* UI Control Button Styles */
+    button.ui-control.button,
+    a.ui-control.button,
+    li.ui-control.button,
+    .placeable-hud .control-icon.button,
+    .placeable-hud input.button {
+        --control-border-color: var(--suiq-color-white);
+        --control-hover-bg-color: var(--suiq-color-black);
+        --control-hover-border-color: var(--suiq-color-black);
+    }
+    /* UI Control Toggle Styles */
+    button.ui-control.toggle,
+    a.ui-control.toggle,
+    li.ui-control.toggle,
+    .placeable-hud .control-icon.toggle,
+    .placeable-hud input.toggle {
+        --control-bg-color: var(--suiq-color-gray);
+        --control-border-color: var(--suiq-color-white);
+        --control-active-bg-color: var(--suiq-color-quantum-aureole);
+        --control-active-border-color: var(--suiq-color-uncertainty-flare);
+        --control-hover-border-color: var(--suiq-color-black);
+    }
+    /* Divider Header Styles */
+    h1.divider::before,
+    h2.divider::before,
+    h3.divider::before,
+    h4.divider::before,
+    h1.divider::after,
+    h2.divider::after,
+    h3.divider::after,
+    h4.divider::after {
+        border-top: 2px ridge var(--divider-line-color);
+    }
+    h1.divider,
+    h2.divider,
+    h3.divider,
+    h4.divider {
+        color: var(--divider-text-color);
+    }
+    /* Pressed UI Control Styles */
+    button.ui-control[aria-pressed="true"],
+    a.ui-control[aria-pressed="true"],
+    li.ui-control[aria-pressed="true"],
+    .placeable-hud .control-icon[aria-pressed="true"],
+    .placeable-hud input[aria-pressed="true"] {
+        border: 2px solid var(--suiq-color-virtual-photon);
+    }
+    /* Chat Message Focus */
+    #chat-message:focus {
+        outline-color: var(--suiq-color-white);
+    }
+    /* Font Styles */
+    body {
+        --font-body: var(--suiq-font-primary);
+    }
+    .header-actions > button,
+    .settings > button,
+    .documentation > button,
+    .documentation > a.button,
+    .access > button {
+        font-family: var(--suiq-font-primary);
+    }
+    h2 {
+        font-family: var(--suiq-font-Orbitron);
+        font-size: var(--font-size-20);
+    }
+
+
+
+}
+
+
+
+/* ====== OCCUPATIONS : Effets quantiques ====== */
+
+.suiq-occupations .occupation {
+  transition: opacity 0.3s ease, font-weight 1.2s ease;
+}
+
+/* Superposition */
+.suiq-occupations[data-quantum="superposed"] .occupation {
+  filter: blur(0.5px);
+  opacity: 0.55;
+  font-weight: 400;
+  animation: suiq-quantum-flicker 3s ease-in-out;
+}
+
+/* Collapse A */
+.suiq-occupations[data-quantum="collapsed-A"] .occupation-a {
+  filter: none;
+  opacity: 1;
+  font-weight: 600;
+  animation: suiq-quantum-collapse-a 1.8s ease-out;
+}
+
+.suiq-occupations[data-quantum="collapsed-A"] .occupation-b {
+  filter: blur(1.4px);
+  opacity: 0.55;
+  font-weight: 400;
+}
+
+/* Collapse B */
+.suiq-occupations[data-quantum="collapsed-B"] .occupation-b {
+  filter: none;
+  opacity: 1;
+  font-weight: 600;
+  animation: suiq-quantum-collapse-b 1.8s ease-out;
+}
+
+.suiq-occupations[data-quantum="collapsed-B"] .occupation-a {
+  filter: blur(1.4px);
+  opacity: 0.55;
+  font-weight: 400;
+}
+
+/* Focus & hover : lisible */
+.suiq-occupations .occupation:focus,
+.suiq-occupations .occupation:hover {
+  filter: none;
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes suiq-quantum-flicker {
+  0%, 100% { filter: blur(0.6px); }
+  50%      { filter: blur(1.2px); }
+}
+@keyframes suiq-quantum-collapse-a {
+  0% { filter: blur(0.6px) }
+  100% { filter: none; }
+}
+@keyframes suiq-quantum-collapse-b {
+  0% { filter: blur(0.6px) }
+  100% { filter: none; }
+}
+
+/* ════════════════════════════════════════════════════════════
+   STRUCTURE FONDAMENTALE
+   ════════════════════════════════════════════════════════════ */
+
+:where(.shut-up-its-quantum:is(.actor, .item)) .window-content {
+  margin-top: -36px;
+}
+:where(.shut-up-its-quantum:is(.actor, .item)) .window-title {
+  color: var(--color-form-hint);
+  transition: opacity 0.3s ease;
+}
+:where(.shut-up-its-quantum:is(.actor, .item)) .window-header {
+  background-color: transparent;
+  border-bottom: none;
+}
+:where(.shut-up-its-quantum:is(.actor, .item)) .window-header button.header-control {
+  --button-text-color: var(--color-text-primary);
+}
+
+/* ════════════════════════════════════════════════════════════
+   BACKGROUNDS (fond clair/sombre)
+   ════════════════════════════════════════════════════════════ */
+
+body.theme-light :where(.application).shut-up-its-quantum:is(.actor, .item) {
+  background:
+    linear-gradient(135deg, var(--suiq-color-collapse-glow), var(--suiq-color-casimir-bloom)),
+    var(--suiq-dynamic-bg, var(--suiq-default-bg)) center / cover no-repeat;
+    background-attachment: fixed;
+}
+
+body.theme-dark :where(.application).shut-up-its-quantum:is(.actor, .item) {
+  background:
+    linear-gradient(135deg, var(--suiq-color-singularity-veil), var(--suiq-color-gravity-ink)),
+    var(--suiq-dynamic-bg, var(--suiq-default-bg)) center / cover no-repeat;
+    background-attachment: fixed;
+}
+
+body.theme-dark :where(.application).shut-up-its-quantum:is(.actor, .item) .window-content {
+  backdrop-filter: none;
+}
+
+/* ════════════════════════════════════════════════════════════
+   HEADER COMMUN (Character / Inference / Artifact)
+   ════════════════════════════════════════════════════════════ */
+
+.suiq-entity-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.suiq-entity-header img {
+  border-radius: 6px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.suiq-entity-header .entity-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 0.6rem;
+  justify-content: flex-start;
+}
+
+.suiq-entity-header .entity-info input[name="name"] {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: rgba(0,0,0,0.3);
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  width: 100%;
+  margin-bottom: 0.2rem;
+}
+
+/* Bouton quantique générique */
+.suiq-entity-header .suiq-roll-button {
+  align-self: center;
+  border-radius: 6px;
+  padding: 0.4rem 0.8rem;
+  font-weight: 600;
+  transition: background 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+}
+
+/* Thèmes du bouton */
+body.theme-dark .suiq-entity-header .suiq-roll-button {
+  background: var(--suiq-color-boson-glimmer);
+  border: 1px solid var(--suiq-color-quantum-corona);
+  text-shadow: 0 0 4px var(--suiq-color-quantum-corona);
+}
+body.theme-dark .suiq-entity-header .suiq-roll-button:hover {
+  background: var(--suiq-color-wavefunction-crest);
+  box-shadow: 0 0 10px var(--suiq-color-quantum-corona);
+  color: var(--color-light-2);
+}
+body.theme-light .suiq-entity-header .suiq-roll-button {
+  background: var(--suiq-color-solar-superposition);
+  border: 1px solid var(--suiq-color-uncertainty-flare);
+  text-shadow: 0 0 3px var(--suiq-color-virtual-photon);
+}
+body.theme-light .suiq-entity-header .suiq-roll-button:hover {
+  background: var(--suiq-color-probability-surge);
+  box-shadow: 0 0 8px var(--suiq-color-quantum-aureole);
+  color: var(--color-dark-5);
+}
+
+@keyframes suiq-quantum-charge {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+.suiq-entity-header .suiq-roll-button:hover {
+  animation: suiq-quantum-charge 0.8s ease-in-out;
+}
+
+/* Variantes spécifiques */
+.suiq-character .suiq-entity-header img { width: 120px; height: 120px; }
+.suiq-inference .suiq-entity-header img,
+.suiq-artifact .suiq-entity-header img { width: 90px; height: 90px; }
+
+.suiq-character .suiq-entity-header .entity-info { margin-top: 2.4rem; }
+.suiq-inference .suiq-entity-header .entity-info,
+.suiq-artifact .suiq-entity-header .entity-info { margin-top: 1.6rem; }
+
+/* ════════════════════════════════════════════════════════════
+   FIELDSETS & HINTS (communs à toutes les fiches)
+   ════════════════════════════════════════════════════════════ */
+
+:where(.suiq-character, .suiq-inference, .suiq-artifact) fieldset {
+  display: grid;
+  gap: 0.5rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: 1rem;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(2px);
+}
+
+/* Thèmes fieldsets */
+body.theme-dark :is(.suiq-character, .suiq-inference, .suiq-artifact) fieldset {
+  background: var(--suiq-color-quantum-hinterlight);
+  border-color: var(--suiq-color-excited-state-soft);
+}
+body.theme-light :is(.suiq-character, .suiq-inference, .suiq-artifact) fieldset {
+  background: var(--suiq-color-zero-point-dawn);
+  border-color: var(--suiq-color-decoherence-mist);
+}
+
+/* Hints interactifs */
+:where(.suiq-character, .suiq-inference, .suiq-artifact) fieldset .hint {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 0.8rem;
+  color: var(--color-text-subtle);
+  margin-top: 0.3rem;
+}
+:where(.suiq-character, .suiq-inference, .suiq-artifact) fieldset.show-hint .hint {
+  display: block;
+  opacity: 1;
+}
+
+/* Legend interactif */
+:where(.suiq-character, .suiq-inference, .suiq-artifact) fieldset legend {
+  position: relative;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
+  padding-right: 1.2rem;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease;
+}
+:where(.suiq-character, .suiq-inference, .suiq-artifact) fieldset legend:hover {
+  color: var(--color-text-emphatic);
+  cursor: pointer;
+}
+
+/* Triangle indicatif */
+:where(.suiq-character, .suiq-inference, .suiq-artifact) fieldset legend::after {
+  content: "▶";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(0deg);
+  font-size: 0.8rem;
+  opacity: 0.7;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+:where(.suiq-character, .suiq-inference, .suiq-artifact) fieldset.show-hint legend::after {
+  transform: translateY(-50%) rotate(90deg);
+  opacity: 1;
+}
+
+/* Effet visuel à l’ouverture */
+:where(.suiq-character, .suiq-inference, .suiq-artifact) fieldset.show-hint {
+  box-shadow: 0 0 8px var(--suiq-color-excited-state);
+  transition: box-shadow 0.3s ease;
+}
+
+.suiq-quantum-unstable {
+  position: relative;
+  background: radial-gradient(circle, rgba(255, 0, 150, 0.05) 0%, transparent 70%);
+  box-shadow: 0 0 6px rgba(255, 0, 255, 0.4);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.suiq-quantum-unstable:hover {
+  box-shadow: 0 0 12px rgba(255, 50, 255, 0.8);
+  transform: scale(1.02);
+}
+
+.suiq-quantum-disintegrate {
+  animation: quantumDisintegrate 1.2s forwards ease-in;
+  pointer-events: none;
+}
+
+@keyframes quantumDisintegrate {
+  0% {
+    opacity: 1;
+    filter: none;
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.9;
+    filter: hue-rotate(60deg);
+  }
+  50% {
+    opacity: 0.6;
+    filter: blur(3px) hue-rotate(180deg) saturate(2);
+  }
+  75% {
+    opacity: 0.3;
+    filter: blur(6px) hue-rotate(270deg);
+    transform: scale(0.97);
+  }
+  100% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(0.9);
+  }
+}
+
+/* Résonance quantique */
+.suiq-quantum-fragment.suiq-resonate {
+  animation: suiqShake 0.15s infinite linear;
+}
+
+@keyframes suiqShake {
+  0%   { transform: translate(0px, 0px); }
+  25%  { transform: translate(1px, -1px); }
+  50%  { transform: translate(-1px, 1px); }
+  75%  { transform: translate(1px, 1px); }
+  100% { transform: translate(-1px, -1px); }
+}
+
+/* Désintégration */
+.suiq-disintegrate {
+  animation: suiqFadeBreak 1.1s forwards ease-out;
+  filter: blur(1px) brightness(1.4) contrast(1.4);
+}
+
+@keyframes suiqFadeBreak {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+  }
+  40% {
+    opacity: 0.9;
+    transform: scale(1.03) rotate(1deg);
+    filter: blur(2px);
+  }
+  70% {
+    opacity: 0.5;
+    transform: scale(0.98);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.6) rotate(-8deg);
+    filter: blur(10px);
+  }
+}
+
+/* ==================== QUANTUM REALITY COLLAPSE ==================== */
+
+.suiq-reality-collapse {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  backdrop-filter: blur(2px) contrast(1.6);
+  animation: suiq-reality-intro 0.4s ease-out forwards,
+             suiq-reality-glitch 0.14s steps(2,end) infinite alternate;
+  background: rgba(255,255,255,0.05);
+}
+
+@keyframes suiq-reality-intro {
+  0%   { opacity: 0;   filter: blur(0px); }
+  100% { opacity: 1;   filter: blur(1.5px); }
+}
+
+@keyframes suiq-reality-glitch {
+  0%   { transform: translate(0,0);                                filter: hue-rotate(0deg); }
+  20%  { transform: translate(-2px,1px) skewX(3deg);                filter: hue-rotate(30deg); }
+  40%  { transform: translate(3px,-2px) scale(1.01);                filter: hue-rotate(-20deg); }
+  60%  { transform: translate(-1px,2px) skewY(4deg);                filter: hue-rotate(60deg); }
+  80%  { transform: translate(4px,1px) scale(1.02) hue-rotate(90deg); }
+  100% { transform: translate(-3px,-1px);                           filter: hue-rotate(-45deg); }
+}
+
+/* Static signal waves / parasite scanlines */
+.suiq-reality-collapse::after {
+  content: "";
+  position:absolute;
+  inset:0;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255,255,255,0.12) 0px,
+      rgba(255,255,255,0.05) 2px,
+      rgba(0,0,0,0.25)        3px
+    );
+  mix-blend-mode: overlay;
+  opacity:0.25;
+  animation:suiq-signal-scan 0.9s linear infinite;
+}
+
+@keyframes suiq-signal-scan {
+  0%   { transform:translateY(-5%); }
+  100% { transform:translateY(5%);  }
+}
+
+/* --------------------------
+   ImagePopout quantum appear
+   -------------------------- */
+.suiq-image-appear {
+  animation: suiq-pop-zoomfade 300ms ease-out forwards;
+  transform-origin: center center;
+  opacity: 0;
+  transform: scale(0.85);
+}
+
+@keyframes suiq-pop-zoomfade {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+    filter: blur(2px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.03);
+    filter: blur(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.suiq-journal-popout-content {
+  overflow-y: auto;
+  padding: 1.2rem;
+  height: 100%;
+  max-height: 100%;
+}

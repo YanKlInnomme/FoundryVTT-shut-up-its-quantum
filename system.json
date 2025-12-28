@@ -1,0 +1,154 @@
+{
+  "id": "shut-up-its-quantum",
+  "title": "Shut Up, It's Quantum!",
+  "description": "In this game, nothing makes sense—because everything is quantum. Rules only exist when you observe them. Actions never lead to predictable outcomes. And your character can change states at any moment. You are adventurers exploring a universe where reality itself slips through your fingers. Why? Shut up. It’s quantum.",
+  "version": "1.0.0",
+  "license": "LICENSE",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351",
+    "maximum": "14"
+  },
+  "socket": true,
+  "authors": [
+    {
+      "name": "YanK",
+      "url": "https://yanklinnomme.fr",
+      "email": "contact@yanklinnomme.fr",
+      "discord": "yanklinnomme"
+    }
+  ],
+  "background": "systems/shut-up-its-quantum/assets/background.webp",
+  "media": [
+      {
+          "type": "cover",
+          "loop": false,
+          "flags": {}
+      },
+      {
+          "type": "setup",
+          "url": "systems/shut-up-its-quantum/assets/repo.webp",
+          "thumbnail": "systems/shut-up-its-quantum/assets/thumbnail.webp"
+      }
+  ],
+  "esmodules": [
+    "shut-up-its-quantum.js"
+  ],
+  "styles": [
+    "styles/shut-up-its-quantum.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "fr",
+      "name": "Français",
+      "path": "lang/fr.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "inference": {}
+    },
+    "Item": {
+      "artifact": {}
+    }
+  },
+  "packs": [
+    {
+      "label": "Artifacts substantiels",
+      "name": "artefacts-substanciels",
+      "type": "Item",
+      "system": "shut-up-its-quantum",
+      "path": "packs/artefacts-substanciels",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "Macros",
+      "name": "macros",
+      "type": "Macro",
+      "system": "shut-up-its-quantum",
+      "path": "packs/macros",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "ψ0x1f_cache",
+      "name": "ps0x1fcache",
+      "type": "JournalEntry",
+      "system": "shut-up-its-quantum",
+      "path": "packs/ps0x1fcache",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "Random Tables & Co.",
+      "name": "random-tables-and-co",
+      "type": "RollTable",
+      "system": "shut-up-its-quantum",
+      "path": "packs/random-tables-and-co",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "∴sπn.registry",
+      "name": "spnregistry",
+      "type": "Actor",
+      "system": "shut-up-its-quantum",
+      "path": "packs/spnregistry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "Substantial Artifacts",
+      "name": "substantial-artifacts",
+      "type": "Item",
+      "system": "shut-up-its-quantum",
+      "path": "packs/substantial-artifacts",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "_sys.relay.tmp",
+      "name": "sysrelaytmp",
+      "type": "Macro",
+      "system": "shut-up-its-quantum",
+      "path": "packs/sysrelaytmp",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "label": "Tables aléatoires & Cie",
+      "name": "tables-aleatoires-and-cie",
+      "type": "RollTable",
+      "system": "shut-up-its-quantum",
+      "path": "packs/tables-aleatoires-and-cie",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "url": "https://github.com/YanKlInnomme/FoundryVTT-shut-up-its-quantum",
+  "manifest": "",
+  "download": ""
+}

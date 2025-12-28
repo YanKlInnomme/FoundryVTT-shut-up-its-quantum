@@ -1,0 +1,46 @@
+<section class="suiq-sheet suiq-artifact" data-dropzone="true">
+
+  <header class="suiq-entity-header">
+    <img class="character-img" src="{{document.img}}" data-edit="img" data-action="editImage" data-tooltip="{{document.name}}" />
+    <div class="entity-info">
+      <input type="text" name="name" value="{{document.name}}" placeholder="{{localize 'SUIQ.Sheets.Artifact.NamePlaceholder'}}" />
+
+      {{#if linkedTable}}
+        <button type="button" data-action="roll-linked-table" class="suiq-roll-button" data-tooltip="{{linkedTable.name}}">
+          {{localize "SUIQ.Roll.FromTable"}} {{linkedTable.formula}}
+        </button>
+      {{/if}}
+    </div>
+  </header>
+
+  <fieldset>
+    <legend>{{localize "SUIQ.Sheets.Artifact.DescriptionLabel"}}</legend>
+    <p class="hint">{{localize "SUIQ.Sheets.Artifact.DescriptionHint"}}</p>
+    {{formInput systemFields.description value=system.description enriched=system.description toggled=true engine="prosemirror"}}
+  </fieldset>
+
+  <fieldset>
+    <legend>{{localize "SUIQ.Sheets.Artifact.EffectLabel"}}</legend>
+    <p class="hint">{{localize "SUIQ.Sheets.Artifact.EffectHint"}}</p>
+    {{formInput systemFields.effect value=system.effect enriched=system.effect toggled=true engine="prosemirror"}}
+  </fieldset>
+
+  {{#if linkedTable}}
+    <fieldset>
+      <legend>{{localize "SUIQ.Sheets.Artifact.LinkedTable"}}</legend>
+      <p class="hint">{{localize "SUIQ.Sheets.Artifact.LinkedTableHint"}}</p>
+      <div class="linked-table-name">
+        <strong>{{linkedTable.name}}</strong> — {{linkedTable.formula}}
+      </div>
+    </fieldset>
+  {{else}}
+    <fieldset class="dropzone">
+      <legend>{{localize "SUIQ.Sheets.Artifact.DropTableLabel"}}</legend>
+      <p class="hint">{{localize "SUIQ.Sheets.Artifact.DropTableHint"}}</p>
+      <div class="dropzone-inner">
+        {{localize "SUIQ.Sheets.Artifact.DropHere"}}
+      </div>
+    </fieldset>
+  {{/if}}
+
+</section>

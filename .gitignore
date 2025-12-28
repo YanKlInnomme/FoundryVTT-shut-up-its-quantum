@@ -1,0 +1,10 @@
+# The Foundry VTT lock file
+*.lock
+
+# Le dossier PSD contenant les fichiers graphiques
+psd
+sources
+actors
+_source
+.env
+.temp

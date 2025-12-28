@@ -1,0 +1,22 @@
+<div class="suiq-journal-popout-content">
+  <h2>{{title}}</h2>
+  {{#if (eq type "text")}}
+    <div class="journal-text">{{{content}}}</div>
+  {{/if}}
+
+  {{#if (eq type "image")}}
+    <img src="{{src}}" class="journal-image"/>
+    {{#if caption}}<div class="caption">{{caption}}</div>{{/if}}
+  {{/if}}
+
+  {{#if (eq type "video")}}
+    <video 
+      src="{{src}}" 
+      {{#if autoplay}}autoplay{{/if}} 
+      {{#if loop}}loop{{/if}} 
+      {{#if controls}}controls{{/if}}
+      style="width:100%;">
+    </video>
+  {{/if}}
+
+</div>

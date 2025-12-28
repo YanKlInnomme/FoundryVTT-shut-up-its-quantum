@@ -1,0 +1,106 @@
+{
+  "TYPES": {
+    "Actor": {
+      "character": "Transitional character",
+      "inference": "Quantum inference"
+    },
+    "Item": {
+      "artifact": "Substantial artifact"
+    }
+  },
+  "SUIQ": {
+    "Links": {
+      "SiteTitle": "YanKlInnomme",
+      "SiteURL": "https://yanklinnomme.fr/",
+      "GitTitle": "System deposit",
+      "GitURL": "https://github.com/YanKlInnomme/FoundryVTT-shut-up-its-quantum",
+      "DonationTitle": "Buy Me a Coffee",
+      "DonationURL": "https://www.buymeacoffee.com/yank"
+    },
+    "Sheets": {
+      "Character": {
+        "NamePlaceholder": "e.g.: Max Collapse, Luna Quark...",
+        "IdentityLabel": "Identity",
+        "IdentityHint": "Give this character a face that everyone can observe.",
+        "OccupationLabel": "Superposed occupations",
+        "OccupationHint": "Choose two completely different professions.",
+        "OccupationAPlaceholder": "e.g.: Warrior, Mage, Thief...",
+        "OccupationBPlaceholder": "e.g.: Scientist, Artist, Politician...",
+        "OccupationStateLabel": "Observed occupation (GM only)",
+        "OccupationStateHint": "Which profession is currently active?",
+        "OccupationStateSuperposed": "In superposition",
+        "TraitLabel": "Unique trait",
+        "TraitHint": "Choose a power or a quirk that is completely absurd.",
+        "NotesLabel": "Notes",
+        "NotesHint": "Free space for any non-quantum usage."
+      },
+      "Inference": {
+        "NamePlaceholder": "e.g.: Cortex the Unthinker, The Mother-Wave...",
+        "ObjectiveLabel": "Inference objective",
+        "ObjectiveHint": "What does this force want, and what opposes it against the PCs?",
+        "ObjectivePlaceholder": "e.g.: Steal, Destroy, Save, Find...",
+        "DescriptionLabel": "Description",
+        "DescriptionHint": "Describe this quantum inference in detail.",
+        "EffectLabel": "Effect",
+        "EffectHint": "What effect does this inference have on reality?"
+      },
+      "Artifact": {
+        "NamePlaceholder": "e.g.: Decoherence Fragment, Zero-Empathy Cube...",
+        "DescriptionLabel": "Description",
+        "DescriptionHint": "Describe the appearance, origin, or apparent function of the artifact.",
+        "EffectLabel": "Effects",
+        "EffectHint": "Explain how this artifact alters reality or influences those who use it.",
+        "DropTableLabel": "Random table",
+        "DropTableHint": "Drag and drop a random table here to link it to this artifact.",
+        "DropHere": "Drop a random table here",
+        "LinkedTable": "Linked random table",
+        "LinkedTableHint": "You can drag and drop another table to replace it. Click the button below the name to roll.",
+        "TableNotFound": "Linked table not found.",
+        "NoLinkedTable": "No linked table."
+      }
+    },
+    "Roll": {
+      "TwoD8Label": "Roll 2d8",
+      "TwoD8Tooltip": "Roll 2d8 to determine the quantum outcome of your action.",
+      "Result": {
+        "Catastrophe": "Quantum catastrophe",
+        "Erasure": "Quantum erasure",
+        "StrangeSuccess": "Strange success",
+        "ImprobableSuccess": "Improbable success",
+        "DoubleInfinity": "Double Infinity"
+      },
+      "Desc": {
+        "Catastrophe": "The action fails spectacularly, and the result is the complete opposite of what the player intended. Example: Trying to light a candle causes a snowstorm in the room. The GM describes the impending catastrophe.",
+        "Erasure": "Nothing happens. Absolutely nothing, as if the action never occurred. The GM describes the scene without taking the player's action into account, treating it as if it was never attempted. Other characters may not even remember the action unless the player insists… but the universe itself does not 'understand' this insistence.",
+        "StrangeSuccess": "The action partially succeeds, but with an unexpected and often counter-intuitive result. For example, a fire spell conjures a wave of icy water, or convincing someone suddenly makes them want to dance.",
+        "ImprobableSuccess": "The action fully succeeds, but it may (or may not) have an absurd consequence. For example, upon finding the exit of a labyrinth, the character inexplicably ends up holding a salad, or a cloud of confetti now follows them everywhere.",
+        "DoubleInfinity": "The player touches the limits of reality with a double 8 — an '88' representing infinity squared. They are projected into a quantum state and must 'renormalize' the situation by rolling 1d8 to manage the overflowing cosmic energy (see the Quantum Renormalization Table)."
+      },
+      "FromTable": "Roll "
+    },
+    "UI": {
+      "Unlock": {
+        "Suspension": "Unlock interrupted: latent instability prevents sufficient targeting."
+      },
+      "Import": {
+        "AccessDenied": "Observation impossible: probability of interference with another observer detected",
+        "Success": "Quantum reappearance successful",
+        "Suspension": "Import suspended: the quantum matrix seems to refuse any attempt at mass observation."
+      }
+    },
+    "Settings": {
+      "SquareA": {
+        "Name": "Quantum restructuring process",
+        "Hint": "Please use this option only in case of system instability."
+      },
+      "SquareB": {
+        "Name": "Fine quadratic probability recalibration",
+        "Hint": "If this option appears, a residual quantum instability remains. Please use it only if this fraction becomes uncontrollable."
+      },
+      "SquareC": {
+        "Name": "Ultradimensional subquantum isolation",
+        "Hint": "At this point, I will need to re-energize the matrices and fold the multiverses. We enter nanomolecular calibration, at the very edge of matter creation. Please use this option only as a last resort."
+      }
+    }
+  }
+}
