@@ -1,6 +1,6 @@
 ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYanKlInnomme%2FFoundryVTT-shut-up-its-quantum%2Fmaster%2Fsystem.json&query=%24.compatibility.verified&label=foundry%20vtt&color=%23ee9b3a) ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYanKlInnomme%2FFoundryVTT-shut-up-its-quantum%2Fmaster%2Fsystem.json&query=%24.version&label=version&color=%230f2f2b) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YanKlInnomme/FoundryVTT-shut-up-its-quantum/total) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-raw/YanKlInnomme/FoundryVTT-shut-up-its-quantum) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-closed-raw/YanKlInnomme/FoundryVTT-shut-up-its-quantum) ![GitHub forks](https://img.shields.io/github/forks/YanKlInnomme/FoundryVTT-shut-up-its-quantum) ![GitHub Repo stars](https://img.shields.io/github/stars/YanKlInnomme/FoundryVTT-shut-up-its-quantum) [![Static Badge](https://img.shields.io/badge/buy_me_a_coffee-FFDD00?logo=Buy%20Me%20A%20Coffee&logoColor=black)](https://www.buymeacoffee.com/yank)
 
-**Voir ci-dessous pour la version française**
+[**Voir ci-dessous pour la version française**](#système-de-jeu-ta-gueule-cest-quantique-pour-foundry-vtt)
 
 # Shut Up, It's Quantum! Game System for Foundry VTT
 *Shut Up, It's Quantum!* is an absurd and chaotic role-playing game where logic has no grip. The laws of physics waver, rules appear and disappear depending on whether they are observed, and characters change state like volatile particles. Nothing makes sense here — and that is precisely why it works.
@@ -61,7 +61,7 @@ Zn Li Kr H₂O Ne HCl B Xe Ba CH₄ Br I N₂ CH₄ Co I N₂ Fe₂O₃ Br SiO�
 ## Legal Notice
 Cu C KCl Zn B CO Cl C₂H₆O B CH₄ Cl NH₃ Ba Th NH₃ Xe
 
-The Foundry VTT port of *Shut Up, It's Quantum!* is distributed under the SUIQ Creative Entanglement License, Version QΔ-1.0. Please consult the LICENSE file included in the archive for full details. Covered by this license, the system can neither be appropriated nor enclosed: any modification, distribution, or exploitation must remain open, transmissible and free, in order to preserve the creative entanglement from which it originates.
+The Foundry VTT port of *Shut Up, It's Quantum!* is distributed under the SUIQ Creative Entanglement License, Version QΔ-1.0. Please consult the [LICENSE](LICENSE) file included in the archive for full details. Covered by this license, the system can neither be appropriated nor enclosed: any modification, distribution, or exploitation must remain open, transmissible and free, in order to preserve the creative entanglement from which it originates.
 
 This game system is third-party content designed to function exclusively with Foundry Virtual Tabletop. It is developed and distributed in compliance with the [Foundry VTT Limited License Agreement for Package Development](https://foundryvtt.com/article/license/). No proprietary Foundry Virtual Tabletop content is included or redistributed.
 
@@ -122,7 +122,7 @@ Ti C₂H₆O Sn CO₂ N₂ HCl H₂SO₄ H₂O N₂ Al C₂H₆O KCl C₆H₆ P 
 ## Mentions légales
 Cl Ti Co HCN N₂ H₂ Cl SiO₂ Au H₂ Be Mg Pb CH₄ Kr KCl N₂ K Cr Xe C₆H₆ Al Ti Xe
 
-Le portage sur Foundry VTT de *Ta Gueule, C'est Quantique !* est distribué sous licence Licence d'Enchevêtrement Créatif SUIQ Version QΔ-1.0. Veuillez consulter le fichier LICENSE présent dans l'archive pour plus de détails. Couvert par cette licence, le système ne peut ni être approprié ni enfermé : toute modification, diffusion ou exploitation doit rester ouverte, transmissible et libre, afin de préserver l’enchevêtrement créatif dont il est issu.
+Le portage sur Foundry VTT de *Ta Gueule, C'est Quantique !* est distribué sous licence Licence d'Enchevêtrement Créatif SUIQ Version QΔ-1.0. Veuillez consulter le fichier [LICENSE](LICENSE) présent dans l'archive pour plus de détails. Couvert par cette licence, le système ne peut ni être approprié ni enfermé : toute modification, diffusion ou exploitation doit rester ouverte, transmissible et libre, afin de préserver l’enchevêtrement créatif dont il est issu.
 
 Le système de jeu est un contenu tiers conçu pour fonctionner exclusivement avec Foundry Virtual Tabletop. Il est développé et distribué dans le respect de l’[accord de licence limitée de Foundry VTT concernant le développement de paquets](https://foundryvtt.com/article/license/). Aucun élément propriétaire de Foundry Virtual Tabletop n’est inclus ou redistribué.
 
