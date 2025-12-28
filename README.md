@@ -1,4 +1,4 @@
-![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYanKlInnomme%2FFoundryVTT-shut-up-its-quantum%2Fmaster%2Fsystem.json&query=%24.compatibility.verified&label=foundry%20vtt&color=%23ee9b3a) ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYanKlInnomme%2FFoundryVTT-shut-up-its-quantum%2Fmaster%2Fsystem.json&query=%24.version&label=version&color=%230f2f2b) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YanKlInnomme/FoundryVTT-shut-up-its-quantum/total) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-raw/YanKlInnomme/FoundryVTT-shut-up-its-quantum) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-closed-raw/YanKlInnomme/FoundryVTT-shut-up-its-quantum) ![GitHub forks](https://img.shields.io/github/forks/YanKlInnomme/FoundryVTT-shut-up-its-quantum) ![GitHub Repo stars](https://img.shields.io/github/stars/YanKlInnomme/FoundryVTT-shut-up-its-quantum) [![Static Badge](https://img.shields.io/badge/buy_me_a_coffee-FFDD00?logo=Buy%20Me%20A%20Coffee&logoColor=black)](https://www.buymeacoffee.com/yank)
+![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYanKlInnomme%2FFoundryVTT-shut-up-its-quantum%2Fmaster%2Fsystem.json&query=%24.compatibility.verified&label=foundry%20vtt&color=%23ee9b3a) ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FYanKlInnomme%2FFoundryVTT-shut-up-its-quantum%2Fmaster%2Fsystem.json&query=%24.version&label=version&color=%230f2f2b) ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/YanKlInnomme/FoundryVTT-shut-up-its-quantum/total) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-raw/YanKlInnomme/FoundryVTT-shut-up-its-quantum) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-closed-raw/YanKlInnomme/FoundryVTT-shut-up-its-quantum) ![GitHub forks](https://img.shields.io/github/forks/YanKlInnomme/FoundryVTT-shut-up-its-quantum) ![GitHub Repo stars](https://img.shields.io/github/stars/YanKlInnomme/FoundryVTT-shut-up-its-quantum) [![Static Badge](https://img.shields.io/badge/buy_me_a_coffee-FFDD00?logo=Buy%20Me%20A%20Coffee&logoColor=black)](https://www.buymeacoffee.com/yank)
 
 **Voir ci-dessous pour la version française**
 
@@ -70,26 +70,26 @@ This game system is third-party content designed to function exclusively with Fo
 
 ---------------------------------------------------------------------
 
-# Système de Jeu Ta Gueule, C'est Quantique ! pour Foundry VTT
-*Ta Gueule, C'est Quantique !* est un jeu de rôles absurde et chaotique où la logique n’a aucune prise. Les lois de la physique vacillent, les règles apparaissent et disparaissent selon qu’on les observe et les personnages changent d’état comme des particules volatiles. Ici, rien n’a de sens — et c’est précisément ça qui est drôle.
+# Système de Jeu Ta Gueule, C'est Quantique ! pour Foundry VTT
+*Ta Gueule, C'est Quantique !* est un jeu de rôles absurde et chaotique où la logique n’a aucune prise. Les lois de la physique vacillent, les règles apparaissent et disparaissent selon qu’on les observe et les personnages changent d’état comme des particules volatiles. Ici, rien n’a de sens — et c’est précisément ça qui est drôle.
 
 En quelques minutes, créez un aventurier improbable : pirate-chef cuisinier, magicien-dentiste, ou encore un prophète qui parle aux meubles et craint les pâquerettes. Lancez vos dés et laissez la mécanique quantique décider : catastrophe cosmique, succès étrange, effacement total ou révélation absurde… Chaque action est une surprise, chaque jet une nouvelle brèche dans la réalité.
 
-*Ta Gueule, C'est Quantique !* est conçu pour des parties courtes, chaotiques et fortement improvisées.
+*Ta Gueule, C'est Quantique !* est conçu pour des parties courtes, chaotiques et fortement improvisées.
 
-Ce système de jeu est un ensemble de fichiers qui fournissent à Foundry VTT toutes les informations nécessaires pour prendre en charge les règles, les mécanismes et les éléments de jeu spécifiques à *Ta Gueule, C'est Quantique !*.
+Ce système de jeu est un ensemble de fichiers qui fournissent à Foundry VTT toutes les informations nécessaires pour prendre en charge les règles, les mécanismes et les éléments de jeu spécifiques à *Ta Gueule, C'est Quantique !*.
 
-Information complémentaire : Au cours du développement du système de jeu *Ta Gueule, c’est Quantique !*, je me suis heurté à la présence d’instabilités quantiques rémanentes. J’ai tenté d’en identifier et d’en supprimer la cause première, mais sans succès. Malgré plusieurs réécritures et mécanismes de stabilisation, certaines fluctuations persistent. J’ai donc fait le choix de ne plus chercher à les éliminer totalement, mais d’en contenir les effets, afin de préserver l’intégrité globale du système. J’espère que cet état d’équilibre restera suffisamment stable pour garantir une expérience de jeu confortable — tout en acceptant que, par nature, tout système quantique conserve une part d’imprévisibilité.
+Information complémentaire : Au cours du développement du système de jeu *Ta Gueule, c’est Quantique !*, je me suis heurté à la présence d’instabilités quantiques rémanentes. J’ai tenté d’en identifier et d’en supprimer la cause première, mais sans succès. Malgré plusieurs réécritures et mécanismes de stabilisation, certaines fluctuations persistent. J’ai donc fait le choix de ne plus chercher à les éliminer totalement, mais d’en contenir les effets, afin de préserver l’intégrité globale du système. J’espère que cet état d’équilibre restera suffisamment stable pour garantir une expérience de jeu confortable — tout en acceptant que, par nature, tout système quantique conserve une part d’imprévisibilité.
 
 Si vous appréciez le système et que vous avez les moyens de le faire, vous pouvez me soutenir en m'offrant un café sur Buy Me a Coffee (https://www.buymeacoffee.com/yank). Votre geste sera grandement apprécié et contribuera à soutenir le développement continu. Quoi qu'il en soit, je vous souhaite une expérience enrichissante et divertissante. N'hésitez pas à me contacter pour partager vos commentaires ou signaler tout problème éventuel.
 
 ## Source du système
 C₂H₂ SiO₂ Ni Ca Fe CH₄ Ni Xe N₂ Al H₂SO₄ KCl Ba Hg Si S
 
-Une version PDF de *Ta Gueule, C'est Quantique !* est disponible sur itch.io, à l’adresse suivante :
+Une version PDF de *Ta Gueule, C'est Quantique !* est disponible sur itch.io, à l’adresse suivante :
 https://yanklinnomme.itch.io/ta-gueule-cest-quantique
 
-Le PDF constitue la forme primaire et la plus stable du système : il définit clairement les mécaniques, les règles et les intentions de jeu. On y trouve également des conseils, des générateurs et divers éléments utiles — ou volontairement superflus.
+Le PDF constitue la forme primaire et la plus stable du système : il définit clairement les mécaniques, les règles et les intentions de jeu. On y trouve également des conseils, des générateurs et divers éléments utiles — ou volontairement superflus.
 
 La version Foundry VTT en est une transposition.
 À ce titre, certaines mécaniques y sont automatisées et volontairement non expliquées, afin de privilégier la fluidité et l’expérience de jeu.
@@ -98,13 +98,13 @@ Les deux formats sont complémentaires, mais ne produisent pas exactement la mê
 ## Prérequis
 Zn Li H₂SO₄ CO₂ Ne CH₄ Sn K N₂ HCl Br NaCl Au Fe₂O₃ Kr CO₂ B CO Cl H₂O N₂ HCl KCl NaCl Au H₂ KCl KCl C₆H₆ P Si S
 
-Afin de fonctionner ce système nécessite l'installation et la configuration de Foundry VTT. Le logiciel est téléchargeable à l'adresse suivante : https://foundryvtt.com/
+Afin de fonctionner ce système nécessite l'installation et la configuration de Foundry VTT. Le logiciel est téléchargeable à l'adresse suivante : https://foundryvtt.com/
 
 ## Installation
 C₂H₂ NH₃ Br C₂H₆O Ba H₂ Sn Fe₂O₃ Ba CH₄ KCl CO₂ Ne Cl₂ Co KCl C₆H₆ Cu S S
 
 1. Ouvrez Foundry VTT v13 et allez dans le menu **Game Systems > Install System**.
-2. Saisissez *Shut Up, It's Quantum!* dans le champ de recherche ou collez l'URL suivante dans le champ d'installation :
+2. Saisissez *Shut Up, It's Quantum!* dans le champ de recherche ou collez l'URL suivante dans le champ d'installation :
    ```text
    [URL temporaire de développement]
    ```
@@ -114,15 +114,15 @@ C₂H₂ NH₃ Br C₂H₆O Ba H₂ Sn Fe₂O₃ Ba CH₄ KCl CO₂ Ne Cl₂ Co 
 ## Fonctionnalités
 Ti C₂H₆O Sn CO₂ N₂ HCl H₂SO₄ H₂O N₂ Al C₂H₆O KCl C₆H₆ P Si S
 
-- Résolution d'action 2d8 avec prise en charge automatique du double 8 et de la table de renormalisation ;
-- Génération automatique d'aventure quantique via macro, y compris mise à disposition des tables aléatoires via compendium ;
+- Résolution d'action 2d8 avec prise en charge automatique du double 8 et de la table de renormalisation ;
+- Génération automatique d'aventure quantique via macro, y compris mise à disposition des tables aléatoires via compendium ;
 - Compendium avec l'intégralité des objets inutiles 
 - Localisation complète anglais / français prête à l'emploi.
 
 ## Mentions légales
 Cl Ti Co HCN N₂ H₂ Cl SiO₂ Au H₂ Be Mg Pb CH₄ Kr KCl N₂ K Cr Xe C₆H₆ Al Ti Xe
 
-Le portage sur Foundry VTT de *Ta Gueule, C'est Quantique !* est distribué sous licence Licence d'Enchevêtrement Créatif SUIQ Version QΔ-1.0. Veuillez consulter le fichier LICENSE présent dans l'archive pour plus de détails. Couvert par cette licence, le système ne peut ni être approprié ni enfermé : toute modification, diffusion ou exploitation doit rester ouverte, transmissible et libre, afin de préserver l’enchevêtrement créatif dont il est issu.
+Le portage sur Foundry VTT de *Ta Gueule, C'est Quantique !* est distribué sous licence Licence d'Enchevêtrement Créatif SUIQ Version QΔ-1.0. Veuillez consulter le fichier LICENSE présent dans l'archive pour plus de détails. Couvert par cette licence, le système ne peut ni être approprié ni enfermé : toute modification, diffusion ou exploitation doit rester ouverte, transmissible et libre, afin de préserver l’enchevêtrement créatif dont il est issu.
 
 Le système de jeu est un contenu tiers conçu pour fonctionner exclusivement avec Foundry Virtual Tabletop. Il est développé et distribué dans le respect de l’[accord de licence limitée de Foundry VTT concernant le développement de paquets](https://foundryvtt.com/article/license/). Aucun élément propriétaire de Foundry Virtual Tabletop n’est inclus ou redistribué.
 
