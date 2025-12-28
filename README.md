@@ -13,6 +13,13 @@ This game system is a set of files that provide Foundry VTT with all the informa
 
 Additional information: During the development of *Shut Up, It's Quantum!* game system, I encountered the presence of persistent quantum instabilities. I attempted to identify and eliminate their root cause, but without success. Despite several rewrites and stabilization mechanisms, certain fluctuations remain. I therefore chose to stop trying to eradicate them entirely, and instead to contain their effects, in order to preserve the overall integrity of the system. I hope that this state of equilibrium will remain stable enough to ensure a comfortable play experience — while accepting that, by its very nature, any quantum system retains a degree of unpredictability.
 
+<img width="1919" height="1007" alt="Capture d&#39;écran 2025-12-25 022050" src="https://github.com/user-attachments/assets/e62fe4df-9370-45c7-b3d5-a915d7b17d77" />
+<img width="1919" height="1005" alt="Capture d&#39;écran 2025-12-25 022340" src="https://github.com/user-attachments/assets/4bf7bf39-604b-45b8-91b5-27889dba2386" />
+<img width="1919" height="1005" alt="Capture d&#39;écran 2025-12-26 205430" src="https://github.com/user-attachments/assets/a36ae5dd-b775-49a7-a751-ea3cfeeaebce" />
+<img width="1919" height="1007" alt="Capture d&#39;écran 2025-12-27 203659" src="https://github.com/user-attachments/assets/0687892f-e9a7-4fd6-9f45-82e71d9b0234" />
+<img width="1919" height="1004" alt="Capture d&#39;écran 2025-12-27 205533" src="https://github.com/user-attachments/assets/dbe2114b-1309-4601-8ae0-0621ca2605dc" />
+<img width="1919" height="1005" alt="Capture d&#39;écran 2025-12-27 205750" src="https://github.com/user-attachments/assets/40d089d8-c5db-42dd-94dc-daf8b2f9fdc9" />
+
 If you like the system and have the means to do so, you can buy me a coffee (https://www.buymeacoffee.com/yank) to show your support and help me continue development. In any case, I hope you have a great time, and please don't hesitate to contact me to give me your opinion or report any problems.
 
 ## System Source
