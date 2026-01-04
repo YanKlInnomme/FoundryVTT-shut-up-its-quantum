@@ -127,4 +127,4 @@ Le portage sur Foundry VTT de *Ta Gueule, C'est Quantique !* est distribué so
 Le système de jeu est un contenu tiers conçu pour fonctionner exclusivement avec Foundry Virtual Tabletop. Il est développé et distribué dans le respect de l’[accord de licence limitée de Foundry VTT concernant le développement de paquets](https://foundryvtt.com/article/license/). Aucun élément propriétaire de Foundry Virtual Tabletop n’est inclus ou redistribué.
 
 ## Version 1.0.0
- * Première version publique du système Étude
+ * Première version publique du système
