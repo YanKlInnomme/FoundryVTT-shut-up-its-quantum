@@ -65,6 +65,9 @@ The Foundry VTT port of *Shut Up, It's Quantum!* is distributed under the SUIQ C
 
 This game system is third-party content designed to function exclusively with Foundry Virtual Tabletop. It is developed and distributed in compliance with the [Foundry VTT Limited License Agreement for Package Development](https://foundryvtt.com/article/license/). No proprietary Foundry Virtual Tabletop content is included or redistributed.
 
+## Version 1.1.1
+ * Fix for missing actor templates (thanks to @Prizruk for reporting)
+
 ## Version 1.0.1
  * Minor fixes
 
@@ -128,6 +131,9 @@ Cl Ti Co HCN N₂ H₂ Cl SiO₂ Au H₂ Be Mg Pb CH₄ Kr KCl N₂ K Cr Xe C₆
 Le portage sur Foundry VTT de *Ta Gueule, C'est Quantique !* est distribué sous licence Licence d'Enchevêtrement Créatif SUIQ Version QΔ-1.0. Veuillez consulter le fichier [LICENSE](LICENSE) présent dans l'archive pour plus de détails. Couvert par cette licence, le système ne peut ni être approprié ni enfermé : toute modification, diffusion ou exploitation doit rester ouverte, transmissible et libre, afin de préserver l’enchevêtrement créatif dont il est issu.
 
 Le système de jeu est un contenu tiers conçu pour fonctionner exclusivement avec Foundry Virtual Tabletop. Il est développé et distribué dans le respect de l’[accord de licence limitée de Foundry VTT concernant le développement de paquets](https://foundryvtt.com/article/license/). Aucun élément propriétaire de Foundry Virtual Tabletop n’est inclus ou redistribué.
+
+## Version 1.1.1
+ * Correction de l'abscence des modèles d'acteurs (merci à @Prizruk pour le signalement)
 
 ## Version 1.0.1
  * Corrections mineures

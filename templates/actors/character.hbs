@@ -1,0 +1,63 @@
+<section class="suiq-sheet suiq-character">
+
+  <header class="suiq-entity-header">
+    <img class="character-img" src="{{actor.img}}" data-edit="img" data-action='editImage' data-tooltip="{{actor.name}}" />
+    <div class="entity-info">
+      <input type="text" name="name" value="{{document.name}}" placeholder="{{localize 'SUIQ.Sheets.Character.NamePlaceholder'}}" />
+      {{#if showRollButton}}
+        <button type="button" data-action="{{rollAction}}" class="suiq-roll-button" data-tooltip="{{rollTooltip}}">
+          {{rollLabel}}
+        </button>
+      {{/if}}
+    </div>
+  </header>
+
+  <fieldset>
+    <legend>{{localize "SUIQ.Sheets.Character.IdentityLabel"}}</legend>
+    <p class="hint">{{localize "SUIQ.Sheets.Character.IdentityHint"}}</p>
+
+    {{formInput systemFields.identity value=system.identity enriched=system.identity toggled=true engine="prosemirror"}}
+  </fieldset>
+
+  <div class="suiq-occupations-group">
+    <fieldset class="suiq-occupations" data-quantum="{{system.quantumState}}">
+      <legend>{{localize "SUIQ.Sheets.Character.OccupationLabel"}}</legend>
+      <p class="hint">{{localize "SUIQ.Sheets.Character.OccupationHint"}}</p>
+
+      <input type="text"
+        class="occupation occupation-a"
+        name="system.occupationA"
+        value="{{system.occupationA}}"
+        placeholder="{{localize "SUIQ.Sheets.Character.OccupationAPlaceholder"}}">
+
+      <input type="text"
+        class="occupation occupation-b"
+        name="system.occupationB"
+        value="{{system.occupationB}}"
+        placeholder="{{localize "SUIQ.Sheets.Character.OccupationBPlaceholder"}}">
+    </fieldset>
+
+    {{#if user.isGM}}
+    <fieldset>
+      <legend>{{localize "SUIQ.Sheets.Character.OccupationStateLabel"}}</legend>
+      <p class="hint">{{localize "SUIQ.Sheets.Character.OccupationStateHint"}}</p>
+
+      {{formInput systemFields.quantumState value=system.quantumState choices=systemFields.quantumState.choices}}
+    </fieldset>
+    {{/if}}
+  </div>
+
+  <fieldset>
+    <legend>{{localize "SUIQ.Sheets.Character.TraitLabel"}}</legend>
+    <p class="hint">{{localize "SUIQ.Sheets.Character.TraitHint"}}</p>
+
+    {{formGroup systemFields.uniqueTrait value=system.uniqueTrait}}
+  </fieldset>
+  <fieldset>
+    <legend>{{localize "SUIQ.Sheets.Character.NotesLabel"}}</legend>
+    <p class="hint">{{localize "SUIQ.Sheets.Character.NotesHint"}}</p>
+
+    {{formInput systemFields.notes value=system.notes enriched=system.notes toggled=true engine="prosemirror"}}
+  </fieldset>
+
+</section>

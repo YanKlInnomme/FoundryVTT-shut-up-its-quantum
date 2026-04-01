@@ -1,0 +1,34 @@
+<section class="suiq-sheet suiq-inference">
+
+  <header class="suiq-entity-header">
+    <img class="character-img" src="{{actor.img}}" data-edit="img" data-action='editImage' data-tooltip="{{actor.name}}" />
+    <div class="entity-info">
+      <input type="text" name="name" value="{{document.name}}" placeholder="{{localize 'SUIQ.Sheets.Inference.NamePlaceholder'}}" />
+      {{#if showRollButton}}
+        <button type="button" data-action="{{rollAction}}" class="suiq-roll-button" data-tooltip="{{rollTooltip}}">
+          {{rollLabel}}
+        </button>
+      {{/if}}
+    </div>
+  </header>
+
+  <fieldset>
+    <legend>{{localize "SUIQ.Sheets.Inference.ObjectiveLabel"}}</legend>
+    <p class="hint">{{localize "SUIQ.Sheets.Inference.ObjectiveHint"}}</p>
+
+    {{formGroup systemFields.objective value=system.objective placeholder=(localize "SUIQ.Sheets.Inference.ObjectivePlaceholder") localize=true}}
+  </fieldset>
+  <fieldset>
+    <legend>{{localize "SUIQ.Sheets.Inference.DescriptionLabel"}}</legend>
+    <p class="hint">{{localize "SUIQ.Sheets.Inference.DescriptionHint"}}</p>
+
+    {{formInput systemFields.description value=system.description enriched=system.identity toggled=true engine="prosemirror"}}
+  </fieldset>
+  <fieldset>
+    <legend>{{localize "SUIQ.Sheets.Inference.EffectLabel"}}</legend>
+    <p class="hint">{{localize "SUIQ.Sheets.Inference.EffectHint"}}</p>
+
+    {{formInput systemFields.effect value=system.effect enriched=system.identity toggled=true engine="prosemirror"}}
+  </fieldset>
+
+</section>
