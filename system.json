@@ -2,17 +2,17 @@
   "id": "shut-up-its-quantum",
   "title": "Shut Up, It's Quantum!",
   "description": "In this game, nothing makes sense—because everything is quantum. Rules only exist when you observe them. Actions never lead to predictable outcomes. And your character can change states at any moment. You are adventurers exploring a universe where reality itself slips through your fingers. Why? Shut up. It’s quantum.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "LICENSE",
   "compatibility": {
     "minimum": "13",
-    "verified": "13.351",
+    "verified": "14.365",
     "maximum": "14"
   },
   "socket": true,
   "authors": [
     {
-      "name": "YanK",
+      "name": "YanK l'Innommé",
       "url": "https://yanklinnomme.fr",
       "email": "contact@yanklinnomme.fr",
       "discord": "yanklinnomme"

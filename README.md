@@ -42,7 +42,7 @@ This system requires the installation and configuration of Foundry VTT. The soft
 ## Installation
 Ti NH₃ C₂H₆O KCl Ba Th Cr CO₂ Ne CH₄ H₂SO₄ CaCO₃ Au NaCl Si S
 
-1. Open Foundry VTT v13 and navigate to **Game Systems > Install System**.
+1. Open Foundry VTT v13 or v14 and navigate to **Game Systems > Install System**.
 2. Enter *Shut Up, It's Quantum!* in the search field or paste the following URL into the installation field:
    ```text
    https://github.com/YanKlInnomme/FoundryVTT-shut-up-its-quantum/releases/latest/download/system.json
@@ -64,6 +64,11 @@ Cu C KCl Zn B CO Cl C₂H₆O B CH₄ Cl NH₃ Ba Th NH₃ Xe
 The Foundry VTT port of *Shut Up, It's Quantum!* is distributed under the SUIQ Creative Entanglement License, Version QΔ-1.0. Please consult the [LICENSE](LICENSE) file included in the archive for full details. Covered by this license, the system can neither be appropriated nor enclosed: any modification, distribution, or exploitation must remain open, transmissible and free, in order to preserve the creative entanglement from which it originates.
 
 This game system is third-party content designed to function exclusively with Foundry Virtual Tabletop. It is developed and distributed in compliance with the [Foundry VTT Limited License Agreement for Package Development](https://foundryvtt.com/article/license/). No proprietary Foundry Virtual Tabletop content is included or redistributed.
+
+## Version 1.1.2
+ * Verified compatibility with Foundry VTT v14.365;
+ * Fixed asynchronous quantum chat commands being posted as regular chat messages;
+ * Fixed rich-text content binding on inference sheets.
 
 ## Version 1.1.1
  * Fix for missing actor templates (thanks to @Prizruk for reporting)
@@ -109,7 +114,7 @@ Afin de fonctionner ce système nécessite l'installation et la configuration de
 ## Installation
 C₂H₂ NH₃ Br C₂H₆O Ba H₂ Sn Fe₂O₃ Ba CH₄ KCl CO₂ Ne Cl₂ Co KCl C₆H₆ Cu S S
 
-1. Ouvrez Foundry VTT v13 et allez dans le menu **Game Systems > Install System**.
+1. Ouvrez Foundry VTT v13 ou v14 et allez dans le menu **Game Systems > Install System**.
 2. Saisissez *Shut Up, It's Quantum!* dans le champ de recherche ou collez l'URL suivante dans le champ d'installation :
    ```text
    https://github.com/YanKlInnomme/FoundryVTT-shut-up-its-quantum/releases/latest/download/system.json
@@ -131,6 +136,11 @@ Cl Ti Co HCN N₂ H₂ Cl SiO₂ Au H₂ Be Mg Pb CH₄ Kr KCl N₂ K Cr Xe C₆
 Le portage sur Foundry VTT de *Ta Gueule, C'est Quantique !* est distribué sous licence Licence d'Enchevêtrement Créatif SUIQ Version QΔ-1.0. Veuillez consulter le fichier [LICENSE](LICENSE) présent dans l'archive pour plus de détails. Couvert par cette licence, le système ne peut ni être approprié ni enfermé : toute modification, diffusion ou exploitation doit rester ouverte, transmissible et libre, afin de préserver l’enchevêtrement créatif dont il est issu.
 
 Le système de jeu est un contenu tiers conçu pour fonctionner exclusivement avec Foundry Virtual Tabletop. Il est développé et distribué dans le respect de l’[accord de licence limitée de Foundry VTT concernant le développement de paquets](https://foundryvtt.com/article/license/). Aucun élément propriétaire de Foundry Virtual Tabletop n’est inclus ou redistribué.
+
+## Version 1.1.2
+ * Compatibilité vérifiée avec Foundry VTT v14.365 ;
+ * Correction des commandes quantiques asynchrones qui étaient également publiées comme messages ordinaires ;
+ * Correction de la liaison du contenu enrichi dans les feuilles d’inférence.
 
 ## Version 1.1.1
  * Correction de l'abscence des modèles d'acteurs (merci à @Prizruk pour le signalement)

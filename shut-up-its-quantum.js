@@ -1,3 +1,5 @@
+// shut-up-its-quantum.js
+
 import { addSUIQLinksToSettings, registerSUIQSettings } from "./modules/settings.js";
 import { registerSUIQDocuments } from "./modules/register-documents.js";
 import { controlCompendiumDirectory, initAP as initAP, quantumStabilizationBuffer } from "./modules/compendium-control.js";
@@ -96,40 +98,58 @@ Hooks.on("createChatMessage", msg => {
   if (!game.user.isGM) return;
 
   const roll = msg.rolls?.[0];
-  if (roll?._formula === "2d8" && roll.total === 16) {
+  if (roll?.formula === "2d8" && roll.total === 16) {
     onQuantumRoll(systemId);
   }
 });
 
-Hooks.on("chatMessage", async (userId, messageText, chatData) => {
+let __suiq_replaying_chat = false;
+
+Hooks.on("chatMessage", (chatLog, messageText, chatData) => {
+  if (__suiq_replaying_chat) return true;
 
   const text = messageText.trim();
   if (!text) return true;
 
-  const modules = [
-    onQuantumVision,
-    onQuantumKeyword,
-    onQuantumImport,
-    onQuantumImportJournalPage,
-    onQuantumShowPage,
-  ];
+  void (async () => {
+    const modules = [
+      onQuantumVision,
+      onQuantumKeyword,
+      onQuantumImport,
+      onQuantumImportJournalPage,
+      onQuantumShowPage,
+    ];
 
-  let triggered = false;
+    let triggered = false;
 
-  for (const mod of modules) {
-    if (await mod(systemId, text)) {
-      triggered = true;
+    for (const mod of modules) {
+      if (await mod(systemId, text)) {
+        triggered = true;
+      }
     }
-  }
 
-  if (!triggered) return true;
-  if (!game.user.isGM) {
-    game.socket.emit("system.shut-up-its-quantum", {
-      type: "command",
-      text
-    });
-    return false;
-  }
+    if (triggered) {
+      if (!game.user.isGM) {
+        game.socket.emit("system.shut-up-its-quantum", {
+          type: "command",
+          text
+        });
+      }
+      return;
+    }
+
+    __suiq_replaying_chat = true;
+    let replay;
+    try {
+      replay = chatLog.processMessage(text, { speaker: chatData.speaker });
+    } finally {
+      __suiq_replaying_chat = false;
+    }
+    await replay;
+  })().catch(error => {
+    console.error("SUIQ | Chat command processing failed", error);
+    ui.notifications.error(error.message);
+  });
 
   return false;
 });
